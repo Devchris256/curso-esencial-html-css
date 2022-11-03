@@ -1,0 +1,368 @@
+:root{
+  --black:#000000;
+  --blue:#232946;
+  --gray20:#616161;
+  --gray10:#B8C1EC;
+  --pink20:#D4939D;
+  --pink10:#EEBBC3;
+  --white20:#FFFFFE;
+  --white10:#FFFFFF;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--gray10);
+  background: var(--blue);
+}
+
+/* titulos */
+h1,h2,h3{
+  color: var(--white20);
+}
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  margin-block-end: 16px;
+}
+
+h2{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4{
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--white20);
+}
+
+
+/* parrafo */
+h1 +p{
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--gray10);
+}
+p{
+  font-size: 17px;
+  line-height: 24px;
+}
+p a{
+  color: var(--pink10);
+}
+
+/* separador */
+hr{
+  margin-block: 40px;
+}
+
+/* pre */
+pre{
+  max-inline-size: 100%;
+  padding-block: 40px;
+  padding-inline-start: 40px;
+  font-size: 16px;
+  line-height:24px;
+  overflow: auto;
+  font-family: 'Montserrat';
+  color: var(--white20);
+  font-weight: 400;
+}
+
+span{
+  font-weight: 700;
+}
+
+/* wrapper */
+.wrapper{
+  padding-inline: 16px;
+}
+
+/* titulos */
+.section-content-1 h2{
+  margin-block-end: 40px;
+}
+.section-content-1 h3{
+  margin-block: 16px;
+}
+.section-content-1 h3{
+  counter-increment: list;
+}
+.section-content-1 h3::before{
+  content: counter(list)'. ';
+}
+.section-content-2 h3{
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+}
+.section-content-3 h3{
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+}
+.section-content-3 h3:first-child{
+  margin-block-end: 40px;
+}
+.section-content-3 h4{
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white20);
+  font-weight: 400;
+}
+
+/* parrafo */
+.section-content-1 p{
+  margin-block-end: 40px;
+}
+.section-content-1 p:nth-of-type(4){
+  margin-block-end: 58px;
+}
+.section-content-2 p{
+  margin-block: 16px;
+}
+.section-content-4 +p{
+  color: var(--white20);
+  font-weight: 400;
+  margin-block-end: 40px;
+}
+
+/* opciones */
+.opciones-content{
+  font-family: 'Roboto';
+  inline-size: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  margin-block-end: 40px;
+}
+.opciones-content h4{
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white20)
+}
+.opciones-content a{
+  font-weight: 500;
+  color: var(--gray10);
+  text-transform: capitalize;
+  text-decoration: none;
+  display: block;
+  padding-block: 8px;
+  padding-inline-start: 8px;
+  border-radius: 4px;
+}
+.opciones-content a:hover{
+  color: var(--white20);
+}
+.opciones-content a:nth-of-type(5){
+  background: var(--black);
+  color: var(--white10);
+}
+
+/* header */
+.header-content{
+  inline-size: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.header-content summary{
+  font-weight: 700;
+  color: var(--white20);
+}
+.header-content li{
+  font-weight: 400;
+  color: var(--gray10);
+  margin-block-end: 16px;
+}
+.header-content a{
+  text-decoration: none;
+}
+.header-content li:hover{
+  color: var(--blue);
+  font-weight: 600;
+  background: var(--pink20);
+}
+
+/* blockquote */
+.blockquote{
+  margin: 0;
+  margin-block-end: 31px;
+}
+.blockquote-content{
+  max-inline-size: 100%;
+  padding: 24px;
+  border-radius: 8px;
+  background: var(--pink20);
+  color: var(--blue);
+  font-size: 24px;
+  line-height: 32px;
+}
+.blockquote-content p{
+  font-size: 24px;
+  margin: 0;
+  margin-block-end: 16px;
+}
+.blockquote-content span{
+  font-weight: 400;
+}
+.blockquote-content span::before{
+  content: '- ';
+}
+
+/* imagenes */
+.section-content-2 img{
+  inline-size: 100%;
+}
+.section-content-2 img:nth-of-type(2){
+  margin-block-end: 80px;
+}
+
+/* listas */
+.section-content-3 ol, ul{
+  font-size: 17px;
+  line-height: 24px;
+  padding-inline-start: 20px;
+}
+.section-content-3 ul li{
+  margin-block-end: 16px;
+}
+.section-content-3 ul li::marker{
+  color: var(--white20);
+}
+
+/* slider */
+.slider-container{
+  display: block;
+  overflow: auto;
+  white-space: nowrap;
+}
+.slider-slide{
+  font-size: 0;
+  margin: 0;
+}
+.video{
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 16/9;
+  display: inline-block;
+}
+.slider-bullet-list{
+  text-align: center;
+  margin-block-start: 16px;
+}
+.slider-bullet{
+  display: inline-block;
+  inline-size: 16px;
+  block-size: 16px;
+  border-radius: 50%;
+  background: var(--white20);
+}
+
+/* formulario */
+.form input{
+  inline-size: 100%;
+  block-size: 48px;
+  background: var(--blue);
+  border-radius: 8px;
+  padding-block: 12px;
+  padding-inline:16px;
+  color: var(--white20);
+  border: 1px solid var(--white20);
+  box-sizing: border-box;
+  margin-block-start: 16px;
+  margin-block-end: 24px;
+}
+.form input::placeholder{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--white20);
+}
+.form input[type="submit"]{
+  font-size: 16px;
+  border: none;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--blue);
+  background: var(--pink10);
+}
+
+/* footer */
+.footer{
+  margin-block-start: 80px;
+  background: var(--pink10);
+  padding-block: 48px;
+}
+.footer-content{
+  margin-inline: auto;
+  inline-size: 396px;
+}
+.footer-content h3{
+  margin: 0;
+  text-align: center;
+  color: var(--blue);
+  font-weight: 400;
+  line-height: 39px;
+  margin-block-end: 16px;
+}
+.footer-content a{
+  text-decoration: none;
+}
+.footer-content img{
+  margin-inline: 8px;
+}
+.redes{
+  text-align: center;
+}
+
+@media screen and (min-width:1190px) {
+  h1{
+    font-size: 64px;
+    margin-block-start: 100px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  h3{
+    font-size: 32px;
+  }
+  h4{
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--white20);
+  }
+  hr{
+    margin-block-start: 58px;
+    margin-block-end: 40px;
+  }
+  .wrapper{
+    inline-size: 636px;
+    position: relative;
+    inset-inline-start: 530px;
+  }
+  .opciones-content{
+    position: absolute;
+    inset-inline-start: -330px;
+    inline-size: 306px;
+    margin-block-end: 0;
+  }
+  .header{
+    position: sticky;
+    inset-block-start: -482px;
+  }
+  .header-content{
+    inline-size: 222px;
+    position: absolute;
+    inset-inline-start: -330px;
+    inset-block-start: 492px;
+  }
+}
