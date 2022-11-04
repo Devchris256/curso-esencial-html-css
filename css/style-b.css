@@ -292,7 +292,7 @@ p span{
   margin: auto;
   text-align: center;
 }
-.footer-content h3{
+.footer-content h2{
   margin-block-start: 0;
   color: var(--b);
   margin-block-end: 16px;
