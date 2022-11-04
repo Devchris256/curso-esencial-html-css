@@ -405,6 +405,7 @@ input::placeholder {
   }
 
   .header {
+    display: block;
     position: sticky;
     inset-block-start: -393px;
   }
